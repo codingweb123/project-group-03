@@ -73,6 +73,10 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
+    .rent-form {
+        width: 100%;
+    }
+    
     .rent-input {
         width: 100%;
     }
@@ -117,9 +121,14 @@
         height: 534px;
     }
 
+    .rent-form {
+        display: flex;
+        flex-direction: column;
+    }
+
     .rent-form-box {
-        margin: 0 auto;
-        max-width: 473px;
+        display: flex;
+        justify-content: center;
     }
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YachtJet Team Project</title>
     <script type="module" crossorigin src="/project-group-03/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-group-03/assets/index-D6RISWhx.css">
+    <link rel="stylesheet" crossorigin href="/project-group-03/assets/index-BLS6DPEV.css">
   </head>
   <body>
     <header class="header">
@@ -144,8 +144,102 @@
   <div class="container"></div>
 </section>
       <section class="section rent" id="rent">
-  <div class="container"></div>
+  <div class="container">
+    <div class="rent-form-box">
+      <form class="rent-form">
+        <h2 class="rent-title">Rent a yacht now</h2>
+        <label for="user-name">
+          <input
+            class="rent-input"
+            type="text"
+            pattern="[A-z]{1,} [A-z]{1,}"
+            id="user-name"
+            name="user-name"
+            placeholder="Full Name"
+            required
+          />
+        </label>
+        <label for="user-email">
+          <input
+            class="rent-input"
+            type="email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            id="user-email"
+            name="user-email"
+            placeholder="Email"
+            required
+          />
+        </label>
+        <label for="user-tel">
+          <input
+            class="rent-input"
+            type="tel"
+            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            id="user-tel"
+            name="user-tel"
+            placeholder="Phone number"
+            required
+          />
+        </label>
+        <label for="user-comment">
+          <textarea
+            class="rent-input rent-comment"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+        <button class="rent-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <picture>
+      <source
+        type="image/webp"
+        media="(min-width: 1440px)"
+        srcset="/project-group-03/assets/rent-DBN9bIj8.webp 1x, /project-group-03/assets/rent@2x-BxcZtf55.webp 2x"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 1280px)"
+        srcset="/project-group-03/assets/rent-desktop-Dk-4PveA.webp 1x, /project-group-03/assets/rent-desktop@2x-pyZu-C5r.webp 2x"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset="/project-group-03/assets/rent-tablet-sK588swr.webp 1x, /project-group-03/assets/rent-tablet@2x-DcOH5Mjm.webp 2x"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 767px)"
+        srcset="/project-group-03/assets/rent-mobile-htOHfa1o.webp 1x, /project-group-03/assets/rent-mobile@2x-CDhTJnc4.webp 2x"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="/project-group-03/assets/rent-f-uK7MXh.jpg 1x, /project-group-03/assets/rent@2x-BHBi0YE3.jpg 2x"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="/project-group-03/assets/rent-desktop-xQkqDnRm.jpg 1x, /project-group-03/assets/rent-desktop@2x-SJx4ZgE5.jpg 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-group-03/assets/rent-tablet-D96CyF-w.jpg 1x, /project-group-03/assets/rent-tablet@2x-DlulE7Zh.jpg 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="/project-group-03/assets/rent-mobile-Bwgn4zck.jpg 1x, /project-group-03/assets/rent-mobile@2x-C4-T1oC_.jpg 2x"
+      />
+      <img
+        class="rent-img"
+        src="/project-group-03/assets/rent-mobile-Bwgn4zck.jpg"
+        alt="yacht-image"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
+
       <section class="section reviews" id="reviews">
   <div class="container">
     <h2 class="rev-title">

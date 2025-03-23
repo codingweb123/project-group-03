@@ -1,1 +1,156 @@
 /* RENT */
+
+.rent-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+
+.rent-input {
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 12px;
+    width: 335px;
+    height: 42px;
+    background-color: transparent;
+    outline: none;
+
+    margin-bottom: 18px;
+    padding-left: 18px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    color: #fbfbfb;
+
+    transition: border var(--animation-time) var(--animation-transition);
+}
+
+.rent-input:hover,
+.rent-input:focus {
+    border: 1px solid rgba(251, 251, 251, 0.5);
+}
+
+.rent-input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(251, 251, 251, 0.4);
+}
+
+.rent-comment {
+    height: 108px;
+    padding: 14px 18px;
+    margin-bottom: 40px;
+}
+
+.rent-btn {
+    background-color: #1b414b;
+    border-radius: 15px;
+    width: 122px;
+    height: 46px;
+    margin-bottom: 80px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+
+    transition: color var(--animation-time) var(--animation-transition), background-color var(--animation-time) var(--animation-transition);
+}
+
+.rent-btn:hover,
+.rent-btn:focus {
+    background-color: #fbfbfb;
+    color: #1b414b;
+}
+
+.rent-img {
+    border-radius: 24px;
+    width: 335px;
+    height: 412px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .rent-form {
+        width: 100%;
+    }
+    
+    .rent-input {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .rent-title {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    .rent-input {
+        width: 472px;
+        height: 54px;
+    
+        font-size: 14px;
+        line-height: 1.28;
+    }
+
+    .rent-input::placeholder {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+
+    .rent-comment {
+        height: 116px;
+        padding: 18px;
+        margin-bottom: 50px;
+    }
+
+    .rent-btn {
+        width: 194px;
+        height: 56px;
+        margin-bottom: 100px;
+    
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .rent-img {
+        width: 704px;
+        height: 534px;
+    }
+
+    .rent-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rent-form-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .rent-btn {
+        margin-bottom: 0;
+    }
+    
+    .rent-img {
+        width: 658px;
+        height: 536px;
+    }
+
+    .rent .container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .rent-img {
+        width: 768px;
+    }
+}

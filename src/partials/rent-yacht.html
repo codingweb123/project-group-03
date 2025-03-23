@@ -3,41 +3,47 @@
     <div class="rent-form-box">
       <form>
         <h2 class="rent-title">Rent a yacht now</h2>
-        <label>
+        <label for="user-name">
           <input
             class="rent-input"
             type="text"
             pattern="[A-z]{1,} [A-z]{1,}"
+            id="user-name"
             name="user-name"
             placeholder="Full Name"
             required
           />
         </label>
-        <label>
+        <label for="user-email">
           <input
             class="rent-input"
             type="email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            id="user-email"
             name="user-email"
             placeholder="Email"
             required
           />
         </label>
-        <label>
+        <label for="user-tel">
           <input
             class="rent-input"
             type="tel"
             pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            id="user-tel"
             name="user-tel"
             placeholder="Phone number"
             required
           />
         </label>
-        <textarea
-          class="rent-input rent-comment"
-          name="user-comment"
-          placeholder="Comment"
-        ></textarea>
+        <label for="user-comment">
+          <textarea
+            class="rent-input rent-comment"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
         <button class="rent-btn" type="submit">Send</button>
       </form>
     </div>

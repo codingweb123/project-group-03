@@ -41,6 +41,7 @@
         line-height: 1.18;
         letter-spacing: -0.04em;
         color: #1b414b;
+        text-transform: uppercase;
 }
 
 .yachts-type {
@@ -49,6 +50,7 @@
         letter-spacing: 0.03em;
         color: #040306;
         opacity: 0.4;
+        text-transform: uppercase;
 }
 
 hr {
@@ -71,4 +73,5 @@ hr {
         letter-spacing: 0.03em;
         color: #040306;
         opacity: 0.4;
+        text-transform: uppercase;
 }

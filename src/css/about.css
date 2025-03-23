@@ -20,11 +20,10 @@
 }
 
 .about-list {
-  padding: 40px 20px 0 20px;
-  margin-bottom: 40px;
+  padding: 40px 20px;
 }
 
-.about-item:not(:last-child) {
+.about-item:first-child {
   margin-bottom: 40px;
 }
 
@@ -60,13 +59,12 @@
     max-width: 536px;
   }
 
-  .about-item:not(:last-child) {
+  .about-item:first-child {
     margin-bottom: 50px;
   }
 
   .about-list {
-    padding: 50px 0 0 32px;
-    margin-bottom: 50px;
+    padding: 50px 0 50px 32px;
   }
 
   .about-text {
@@ -90,7 +88,7 @@
     max-width: 537px;
   }
 
-  .about-item:not(:last-child) {
+  .about-item:first-child {
     margin-bottom: 0;
   }
 
@@ -106,16 +104,12 @@
   .about-list {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px 0 50px;
-    margin-bottom: 100px;
+    padding: 50px 50px 100px 50px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .about-text {
-    max-width: 404px;
-  }
-
+  .about-text,
   .about-descr-text {
     max-width: 404px;
   }

@@ -40,7 +40,7 @@
 @media screen and (min-width: 768px) {
   .header {
     padding: 32px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   .header-logo {
     font-size: 20px;
@@ -52,8 +52,6 @@
 
   .nav-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
   }
 
@@ -101,10 +99,8 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding-top: 32px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 0px;
+    padding-top: 32px 100px;
+    padding-bottom: 0;
   }
   .navigation {
     padding: 0 30px;

@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px 37px;
-  }
+}
 
 .logo-footer {
   font-weight: 500;
@@ -67,6 +67,7 @@
 .footer-icon {
   fill: #fbfbfb;
 }
+
 .slogan {
   max-width: 280px;
   font-size: 18px;
@@ -101,11 +102,13 @@
 @media only screen and (min-width: 768px) {
   .footer .container {
     padding: 50px 48px;
+    padding-bottom: 20px;
   }
 
   .footer {
     padding: 0 16px;
   }
+
   .logo-footer {
     font-size: 20px;
   }
@@ -120,13 +123,14 @@
   .footer-link-item {
     width: 91px;
   }
+
   .slogan {
     max-width: 640px;
     font-size: 32px;
-    margin-top: 56px;
     margin-bottom: 99px;
     margin-top: 96px;
   }
+
   .footer-company {
     gap: 32px;
   }
@@ -140,11 +144,13 @@
 @media only screen and (min-width: 1280px) {
   .footer .container {
     padding: 50px 75px;
+    padding-bottom: 20px;
   }
 
   .footer {
     padding: 0 25px;
   }
+
   .slogan {
     max-width: 693px;
   }

@@ -11,39 +11,12 @@
   padding: 0 10px;
 }
 
-@media only screen and (min-width: 320px) {
-  .footer .container {
-    padding: 40px 30px 20px 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .footer .container {
-    padding: 50px 48px 20px 48px;
-  }
-
-  .footer {
-    padding: 0 16px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .footer .container {
-    padding: 50px 75px 20px 75px;
-  }
-
-  .footer {
-    padding: 0 25px;
-  }
-}
-
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 37px;
-  row-gap: 80px;
-}
+  gap: 80px 37px;
+  }
 
 .logo-footer {
   font-weight: 500;
@@ -94,24 +67,6 @@
 .footer-icon {
   fill: #fbfbfb;
 }
-
-@media only screen and (min-width: 768px) {
-  .logo-footer {
-    font-size: 20px;
-  }
-
-  .footer-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 0;
-  }
-
-  .footer-link-item {
-    width: 91px;
-  }
-}
-
 .slogan {
   max-width: 280px;
   font-size: 18px;
@@ -121,28 +76,6 @@
   color: #fbfbfb;
   margin-bottom: 82px;
   margin-top: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .slogan {
-    max-width: 640px;
-    font-size: 32px;
-    margin-top: 56px;
-    margin-bottom: 99px;
-    margin-top: 96px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .slogan {
-    max-width: 693px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .slogan {
-    max-width: 699px;
-  }
 }
 
 .footer-company {
@@ -158,7 +91,42 @@
   color: rgba(251, 251, 251, 0.4);
 }
 
+@media only screen and (min-width: 320px) {
+  .footer .container {
+    padding: 40px 30px;
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  .footer .container {
+    padding: 50px 48px;
+  }
+
+  .footer {
+    padding: 0 16px;
+  }
+  .logo-footer {
+    font-size: 20px;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+
+  .footer-link-item {
+    width: 91px;
+  }
+  .slogan {
+    max-width: 640px;
+    font-size: 32px;
+    margin-top: 56px;
+    margin-bottom: 99px;
+    margin-top: 96px;
+  }
   .footer-company {
     gap: 32px;
   }
@@ -166,5 +134,24 @@
   .footer-company-text {
     font-size: 14px;
     line-height: 1.18;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer .container {
+    padding: 50px 75px;
+  }
+
+  .footer {
+    padding: 0 25px;
+  }
+  .slogan {
+    max-width: 693px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .slogan {
+    max-width: 699px;
   }
 }

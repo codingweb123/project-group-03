@@ -77,6 +77,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
+    height: 24px;
   }
 
   .header-soc-media-link-icon {
@@ -99,7 +101,7 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding-top: 32px 100px;
+    padding: 32px 100px;
     padding-bottom: 0;
   }
   .navigation {

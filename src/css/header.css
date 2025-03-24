@@ -68,8 +68,8 @@
     width: 91px;
     height: 40px;
     background-color: rgba(27, 65, 75, 0.5);
-    animation-transition: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-time: 250ms;
+    transition: background-color var(--animation-time)
+      var(--animation-transition);
   }
   .header-soc-media-list {
     display: flex;
@@ -83,8 +83,8 @@
 
   .header-soc-media-link-icon {
     fill: #1b414b;
-    animation-transition: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-time: 250ms;
+    transition: background-color var(--animation-time)
+      var(--animation-transition);
   }
   .burger-btn {
     display: none;

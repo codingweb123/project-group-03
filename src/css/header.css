@@ -1,13 +1,11 @@
 /* HEADER */
 .header {
-  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
-  height: 42px;
+.header .container {
+  width: 100%;
+  height: 100%;
   border: 1px solid #fbfbfb;
   border-radius: 8px;
   background-color: #fbfbfb;
@@ -18,14 +16,18 @@
   letter-spacing: -0.03em;
   color: #1b414b;
 }
-.navigation,
-.soc-media-container {
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list,
+.header-soc-media-list {
   display: none;
 }
 
 .burger-btn {
-  padding: 0px;
-  border: none;
   background-color: transparent;
 }
 .burger-icon {
@@ -33,35 +35,31 @@
   fill: #1b414b;
 }
 
-@media screen and (min-width: 375px) {
-  .header-container {
-    width: 335px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header {
-    margin-top: 32px;
+    padding: 32px;
+    padding-bottom: 0px;
   }
-  .header-container {
-    width: 704px;
-    height: 48px;
+  .header .container {
+    height: 100%;
   }
   .header-logo {
     font-size: 20px;
   }
-  .navigation,
-  .soc-media-container {
-    display: block;
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
+
   .nav-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
   }
-  .nav-item {
-  }
+
   .nav-list .nav-link {
     font-weight: 400;
     font-size: 9px;
@@ -73,27 +71,24 @@
     width: 91px;
     height: 40px;
     background-color: rgba(27, 65, 75, 0.5);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-soc-media-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
   }
-  .header-soc-media-item {
-  }
   .header-soc-media-link {
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .header-soc-media-link-icon {
     fill: #1b414b;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .burger-btn {
     display: none;
-  }
-  .burger-icon {
   }
   .nav-list .nav-link:hover,
   .nav-list .nav-link:focus {
@@ -106,7 +101,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header-container {
-    width: 1080px;
+  .header {
+    padding-top: 32px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
   }
 }

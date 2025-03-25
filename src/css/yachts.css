@@ -18,9 +18,20 @@
 }
 
 .yachts-item {
-        max-width: 334px;
+        min-width: 335px;
         background-color: #fbfbfb;
         border-radius: 24px;
+        margin-bottom: 40px;
+}
+
+.our-yachts-picture {
+    display: block;
+    margin: auto;
+    border-radius: 24px;
+    background-color: #fbfbfb;
+    margin: 16px 16px 32px 16px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -35,6 +46,14 @@
     }
 }
 
+.specifications-subtitle {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 32px 32px 16px 32px;
+    width: calc((100%-125px) /2);
+    justify-content: space-between;
+}
+
 .yachts-name {
     font-weight: 500;
         font-size: 14px;
@@ -42,6 +61,7 @@
         letter-spacing: -0.04em;
         color: #1b414b;
         text-transform: uppercase;
+        flex-wrap: nowrap;
 }
 
 .yachts-type {
@@ -57,21 +77,80 @@ hr {
     width: 272px;
     height: 2px;
         stroke: rgba(4, 3, 6, 0.1);
+        margin: 0 auto;
+        margin-bottom: 16px;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(4, 3, 6, 0.1);
+    margin-bottom: 16px;
 }
 
 .yachts-details-list {
-        font-size: 14px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #040306;
+    display: flex;
+    width: calc((100%-114px) /2);
+    justify-content: space-between;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
 }
 
-.yachts-specification {
+.yachts-category p {
         font-size: 14px;
         line-height: 1.18;
         letter-spacing: 0.03em;
         color: #040306;
         opacity: 0.4;
         text-transform: uppercase;
+}
+
+.yachts-value p {
+        font-size: 14px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #040306;
+    }
+
+.yachts.btn {
+    background-color: #0e1823;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    color: #fbfbfb;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yachts.btn:hover,
+.yachts.btn.btn-outline:hover {
+    border: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 375px) {
+    .yachts-title {
+                margin-left: auto;
+                    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.yachts-title {
+    max-width: 645px;
+    font-size: 48px;
+}
+
+    .yachts-list {
+      width: calc((100%-32px)/2);
+      gap: 32px;
+    }
+
+    .yachts-name {
+    text-overflow: ellipsis;
+    color: blue;
+    }
 }

@@ -227,7 +227,7 @@ document.onreadystatechange = () => {
     })
     .add(() => {
       loader.load(
-        'models/yacht/scene.gltf',
+        'yacht-models/yacht/scene.gltf',
         function (gltf) {
           yacht = gltf.scene;
           scene.add(yacht);
@@ -239,7 +239,7 @@ document.onreadystatechange = () => {
         }
       );
       loader.load(
-        'models/yacht-second/scene.gltf',
+        'yacht-models/yacht-second/scene.gltf',
         function (gltf) {
           yacht2 = gltf.scene;
           yacht2.visible = false;

@@ -113,8 +113,7 @@
   margin-right: auto;
 }
 
-.yachts.btn:hover,
-.yachts.btn.btn-outline:hover {
+.yachts.btn:hover {
   border: 0;
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -184,5 +183,6 @@
 
   .yachts-item {
     width: calc((100% - 64px) / 3);
+    max-width: 392px;
   }
 }

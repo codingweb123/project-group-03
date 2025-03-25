@@ -7,14 +7,16 @@ import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 document.querySelectorAll('a[href]').forEach(link => {
   link.onclick = e => {
-    e.preventDefault();
-    if (e.srcElement.classList.contains('a-nav-burger'))
-      document.querySelector('.menu-overlay').classList.remove('is-open');
-    gsap.to(window, {
-      duration: 0.2,
-      ease: 'power1.inOut',
-      scrollTo: `${e.srcElement.getAttribute('href')}`,
-    });
+    if (link.getAttribute('href').contains('#')) {
+      e.preventDefault();
+      if (e.srcElement.classList.contains('a-nav-burger'))
+        document.querySelector('.menu-overlay').classList.remove('is-open');
+      gsap.to(window, {
+        duration: 0.2,
+        ease: 'power1.inOut',
+        scrollTo: `${e.srcElement.getAttribute('href')}`,
+      });
+    }
   };
 });
 let tl = gsap.timeline({

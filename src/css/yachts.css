@@ -15,8 +15,6 @@
 }
 
 .yachts-list {
-  display: flex;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -32,6 +30,7 @@
 .our-yachts-picture {
   border-radius: 24px;
   background-color: #fbfbfb;
+  width: 100%;
 }
 
 .specifications-subtitle {
@@ -142,6 +141,8 @@
   }
 
   .yachts-list {
+    display: flex;
+    justify-content: center;
     gap: 32px;
     margin-bottom: 50px;
   }

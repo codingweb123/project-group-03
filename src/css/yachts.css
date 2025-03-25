@@ -1,1 +1,188 @@
 /* YACHTS */
+
+.yachts {
+  background-color: #0e1823;
+}
+
+.yachts-title {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  max-width: 319px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.yachts-list {
+  margin-bottom: 40px;
+}
+
+.yachts-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  background-color: #fbfbfb;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.our-yachts-picture {
+  border-radius: 24px;
+  background-color: #fbfbfb;
+  width: 100%;
+}
+
+.specifications-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yachts-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  color: #1b414b;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.yachts-type {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: rgba(4, 3, 6, 0.4);
+  text-transform: uppercase;
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(4, 3, 6, 0.1);
+  margin: 16px 0;
+}
+
+.yachts-details-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.yachts-category p {
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: rgba(4, 3, 6, 0.4);
+  text-transform: uppercase;
+}
+
+.yachts-category p:not(:first-child) {
+  margin-top: 6px;
+}
+
+.yachts-value p {
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+
+.yachts-value p:not(:first-child) {
+  margin-top: 6px;
+}
+
+.info {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.yachts .btn {
+  background-color: #0e1823;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  color: #fbfbfb;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yachts .btn:hover {
+  border: 0;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.yachts-item:not(:first-child) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .yachts-title {
+    max-width: 645px;
+    font-size: 48px;
+    margin-bottom: 75px;
+  }
+
+  .yachts-item:not(:last-child) {
+    display: flex;
+  }
+
+  .yachts-item {
+    min-width: 336px;
+    width: calc((100% - 32px) / 2);
+  }
+
+  .yachts-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .yachts-name {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .yachts-type {
+    font-size: 13px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .yachts-title {
+    max-width: 714px;
+  }
+
+  .yachts-item:last-child {
+    display: flex;
+  }
+
+  .yachts-item {
+    max-width: 377px;
+    width: calc((100% - 50px) / 3);
+  }
+
+  .yachts-list {
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .yachts-list {
+    gap: 32px;
+  }
+
+  .yachts-item {
+    width: calc((100% - 64px) / 3);
+    max-width: 392px;
+  }
+}

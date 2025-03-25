@@ -1,4 +1,3 @@
-/* ADVANTAGES */
 .advantages-list {
   border-radius: 24px;
   background-color: #1b414b;
@@ -14,9 +13,7 @@
 .advantages-item:nth-child(2) p {
   max-width: 199px;
 }
-.advantages-item:nth-child(3) p {
-  max-width: 292px;
-}
+.advantages-item:nth-child(3) p,
 .advantages-item:last-child p {
   max-width: 292px;
 }
@@ -25,8 +22,7 @@
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: rgba(251, 251, 251, 0.4);
-  max-width: 295px;
+  color: rgba(251, 251, 251, 0.8);
 }
 
 .advantages-item {
@@ -67,24 +63,14 @@
   .advantages-text {
     font-size: 13px;
     line-height: 1.15;
-    max-width: 304px;
   }
   .advantages-item {
     width: calc((100% - 32px) / 2);
     font-size: 32px;
   }
-  .advantages-item:first-child p {
-  max-width: 238px;
-}
-.advantages-item:nth-child(2) p {
-  max-width: 216px;
-}
-.advantages-item:nth-child(3) p {
-  max-width: 292px;
-}
-.advantages-item:last-child p {
-  max-width: 292px;
-}
+  .advantages-item:nth-child(2) p {
+    max-width: 216px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .advantages-list {
@@ -92,9 +78,6 @@
     width: calc(100% - 466px);
     padding: 90px 50px;
     margin: 0;
-  }
-  .advantages-text {
-    max-width: 292px;
   }
   .advantages-item {
     width: calc((100% - 44px) / 2);
@@ -109,23 +92,11 @@
     align-items: center;
     gap: 32px;
   }
-  .advantages-item:first-child p {
-  max-width: 238px;
-}
-.advantages-item:nth-child(2) p {
-  max-width: 292px;
-}
-.advantages-item:nth-child(3) p {
-  max-width: 292px;
-}
-.advantages-item:last-child p {
-  max-width: 292px;
-}
+  .advantages-item:nth-child(2) p {
+    max-width: 292px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .advantages-text {
-    max-width: 318px;
-  }
   .advantages-item {
     width: calc((100% - 32px) / 2);
   }
@@ -133,16 +104,7 @@
     width: 540px;
     height: 424px;
   }
-  .advantages-item:first-child p {
-  max-width: 238px;
-}
-.advantages-item:nth-child(2) p {
-  max-width: 216px;
-}
-.advantages-item:nth-child(3) p {
-  max-width: 292px;
-}
-.advantages-item:last-child p {
-  max-width: 292px;
-}
+  .advantages-item:nth-child(2) p {
+    max-width: 216px;
+  }
 }

@@ -1,11 +1,8 @@
-document.querySelector('.menu-open').onclick = e => {
+document.querySelector('.burger-btn').onclick = e => {
   e.preventDefault();
   document.querySelector('.menu-overlay').classList.add('is-open');
 };
-document.querySelectorAll('.close').forEach(
-  item =>
-    (item.onclick = e => {
-      e.preventDefault();
-      document.querySelector('.menu-overlay').classList.remove('is-open');
-    })
-);
+document.querySelector('.button-svg-close').onclick = e => {
+  e.preventDefault();
+  document.querySelector('.menu-overlay').classList.remove('is-open');
+};

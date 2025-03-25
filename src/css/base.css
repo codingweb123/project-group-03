@@ -32,6 +32,9 @@ html,
 body {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;

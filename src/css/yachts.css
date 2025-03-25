@@ -73,14 +73,6 @@
         text-transform: uppercase;
 }
 
-hr {
-    width: 272px;
-    height: 2px;
-        stroke: rgba(4, 3, 6, 0.1);
-        margin: 0 auto;
-        margin-bottom: 16px;
-}
-
 .separator {
     display: block;
     height: 1px;

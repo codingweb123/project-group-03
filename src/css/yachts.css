@@ -118,9 +118,50 @@
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
-
 .yachts-item:not(:first-child) {
   display: none;
+}
+.yachts3d .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yachts3d .container .yachts-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.yachts3d .container .yachts-choose li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--animation-time) var(--animation-transition);
+}
+.yachts3d .container .yachts-choose li canvas {
+  width: 100vw;
+  height: auto;
+  border-radius: 50%;
+}
+.yachts3d .container .yachts-choose li:first-child {
+  border: 1px solid rgb(247, 247, 61);
+}
+.yachts3d .container .yachts-choose li:nth-child(2) {
+  border: 1px solid rgb(84, 57, 214);
+}
+.yachts3d .container .colors .color.active,
+.yachts3d .container .colors .color:hover,
+.yachts3d .container .yachts-choose li.active,
+.yachts3d .container .yachts-choose li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width: 768px) {

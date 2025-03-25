@@ -89,12 +89,10 @@
   .burger-btn {
     display: none;
   }
-  .nav-list .nav-link:hover,
-  .nav-list .nav-link:focus {
+  .nav-list .nav-link:hover {
     background-color: #1b414b;
   }
-  .header-soc-media-link-icon:hover,
-  .header-soc-media-link-icon:focus {
+  .header-soc-media-link-icon:hover {
     fill: #062730;
   }
 }

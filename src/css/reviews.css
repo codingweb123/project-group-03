@@ -1,136 +1,135 @@
 .rev-title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.02em;    
-    color: #fbfbfb;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 335px;    
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 335px;
 }
 
 .rev-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(251, 251, 251, 0.4);
-    margin: 0 auto;
-    margin-bottom: 40px;   
-    max-width: 335px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 335px;
 }
 
 .rev-item {
-    border-radius: 24px;
-    padding: 32px 8px;
-    max-width: 335px;
-    background-color: #fbfbfb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  border-radius: 24px;
+  padding: 32px 8px;
+  max-width: 335px;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .reviews .container .rev-list .rev-item img {
-   width: 56px; 
-   height: 56px;
-   border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
 
 .rev-card-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #040306;
-    margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+  margin-top: 16px;
 }
 
 .rev-card-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(4, 3, 6, 0.4);
-    max-width: 304px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+  max-width: 304px;
 }
 
 .rev-item.rev-two,
 .rev-item.rev-three {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .rev-title {
-        font-size: 48px;
-        max-width: 704px;
-    }
+  .rev-title {
+    font-size: 48px;
+    max-width: 704px;
+  }
 
-    .rev-text {
-        font-size: 14px;
-        line-height: 1.29;
-        margin-bottom: 75px;
-        max-width: 571px;
-    }
+  .rev-text {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 75px;
+    max-width: 571px;
+  }
 
-    .rev-item.rev-two {
-        display: flex;
-    }
+  .rev-item.rev-two {
+    display: flex;
+  }
 
-    .rev-list {
-        display: flex;
-        gap: 32px;
-        justify-content: center;
-    }
+  .rev-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
 
-    .rev-item {
-        flex-basis: calc((100% - 32px) / 2);
-    }
+  .rev-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
 
-    .rev-item:nth-child(2) .rev-card-text {
-        max-width: 296px;
-    }
+  .rev-item:nth-child(2) .rev-card-text {
+    max-width: 296px;
+  }
 }
 @media screen and (min-width: 1280px) {
-    .rev-title {
-        max-width: 854px;
-    }
-    .rev-item.rev-three {
-        display: flex;
-    }
-    .rev-list {
-        gap: 26px;
-    }
-    .rev-item {
-        flex-basis: calc((100% - 52px) / 3);
-        max-width: 376px;
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-    .rev-card-text {
-        max-width: 320px;
-    }
-    .rev-item:nth-child(3) .rev-card-text {
-        max-width: 293px;
-    }
-    .rev-item:nth-child(2) .rev-card-text {
-        max-width: 320px;
-    }
+  .rev-title {
+    max-width: 854px;
+  }
+  .rev-item.rev-three {
+    display: flex;
+  }
+  .rev-list {
+    gap: 26px;
+  }
+  .rev-item {
+    flex-basis: calc((100% - 52px) / 3);
+    max-width: 376px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .rev-card-text {
+    max-width: 320px;
+  }
+  .rev-item:nth-child(3) .rev-card-text {
+    max-width: 293px;
+  }
+  .rev-item:nth-child(2) .rev-card-text {
+    max-width: 320px;
+  }
 }
 @media screen and (min-width: 1440px) {
-    .rev-list {
-        gap: 32px;
-    }
-    .rev-item {
-        flex-basis: calc((100% - 64px) / 3);
-        max-width: 392px;
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-    
+  .rev-list {
+    gap: 32px;
+  }
+  .rev-item {
+    flex-basis: calc((100% - 64px) / 3);
+    max-width: 392px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }

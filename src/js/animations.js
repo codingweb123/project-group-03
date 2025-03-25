@@ -7,7 +7,7 @@ import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 document.querySelectorAll('a[href]').forEach(link => {
   link.onclick = e => {
-    if (link.getAttribute('href').contains('#')) {
+    if (e.srcElement.getAttribute('href').contains('#')) {
       e.preventDefault();
       if (e.srcElement.classList.contains('a-nav-burger'))
         document.querySelector('.menu-overlay').classList.remove('is-open');
